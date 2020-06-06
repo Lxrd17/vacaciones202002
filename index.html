@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Mutation</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Tera&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://lxrd17.github.io/developers/fonts/fonts.css" type="text/css" media="all"/>
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/css/main.css'>
+</head>
+<body>
+    <main>
+        <div class="cursor"></div>
+        <section class="bg">
+            <img src="assets/img/bg1.jfif" alt="">
+        </section>
+        <section class="bg1">
+            <img src="assets/img/bg.jfif" alt="">
+        </section>
+        <section class="bg2">
+            <img src="assets/img/bg2.jfif" alt="">
+        </section>
+        <section class="bg3">
+            <img src="assets/img/bg5.png" alt="">
+        </section>
+        <section class="bg4">
+            <img src="assets/img/bg3.jfif" alt="">
+        </section>
+        <div class="brand">
+            <span class="glitch" data-text="R&X">R&X</span>
+        </div>
+        <div class="title">
+            <h1>Mutation</h1>
+        </div>
+        <div class="feat">
+            <h1 class="glitch" data-text="LXRD">LXRD</h1>
+            <h2 class="glitch dd" data-text="Rxxstte">Rxsstte</h2>
+        </div>
+        <div class="date">
+            <p>06 / 06 / 2020</p>
+        </div>
+    </main>
+    <script>
+  const cursor = document.querySelector('.cursor');
+    document.addEventListener('mousemove', e => {
+    cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
+    })
+    document.addEventListener('click', () => {
+    cursor.classList.add("expand");
+
+    setTimeout(() => {
+        cursor.classList.remove("expand");
+    }, 500)
+})
+    </script>
+</body>
+</html>
