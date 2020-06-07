@@ -337,5 +337,38 @@ main{
 }
 .brand span:hover{
     transition: 1s;
+    text-shadow: 5px 5px #000000;
     color: #FF0000;
+}
+@media only screen and (max-width: 400px){
+    main{
+        padding: -10vh;
+    }
+    section{
+        display: flex;
+    }
+    .bg img{
+        width: 10px;
+    }
+    .bg1 img{
+        width: 10px;
+    }
+    .bg2 img{
+        width: 10px;
+    }
+    .bg3 img{
+        width: 10px;
+    }
+    .bg4 img{
+        width: 10px;
+    }
+    .glitch{
+        font-size: 20px;
+    }
+    .title{
+        font-size: 10px;
+    }
+    .date{
+        font-size: 10px;
+    }
 }
